@@ -1,3 +1,126 @@
-body {
-	background-color: #fff;
+* {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+#order-section {
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	margin: 10px auto 50px;;	
+}
+
+#tabs-hold {
+	margin: 5% auto 50px;
+	width: 70%;
+}
+
+.tabs {
+	width: 100%;
+	height: 200px;
+	cursor: pointer;
+	color: #fff;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	transition: all ease-in-out 150ms;
+}
+
+.tabs:hover {
+	transform: scaleX(1.01);
+}
+
+.tabs h3 {
+	padding: 20px;
+}
+
+#tab1-rate {
+	width: 100%;
+	height: 0;
+	transition: all ease-in-out 250ms;
+	display: flex;
+	background-color: #e9e9e9;
+}
+
+#pricing {
+	height: inherit;
+	padding: 0 30px;
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.display-status {
+	height: 200px !Important;
+}
+
+#price {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#pricing>*, #price>* {
+	visibility: hidden;
+}
+
+.info-status>* {
+	visibility: visible !Important;
+	display: block !Important;
+}
+
+#pricing > div:nth-child(2) > form {
+	display: flex;
+}
+
+#amt {
+	width: 160px;
+	margin-right: 19px;
+}
+
+#price {
+	flex: 1;
+}
+
+#accumulator {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 25%;
+}
+
+.cart-items {
+	display: flex;
+	justify-content: space-around;
+}
+
+#order-section > div:nth-child(3) {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-bottom: 0;
+}
+
+#order-section > div:nth-child(3) > input[type="button"]{
+	padding: 10px 25px;
+}
+
+#order-section > div:nth-child(2) {
+	display: flex;
+}
+
+#order-section > div:nth-child(2) > p:nth-child(2) {
+	display: flex;
+}
+
+
+@media screen and (max-width: 650px) {
+	#tabs-hold, #order-section {
+		width: 100%;
+	}
 }
